@@ -31,10 +31,9 @@ export async function svgExport({
                 renderSVG(svg!, context, options, canvas, titleToExport);
             }, 500)
         );
+    }else{
+        await renderSVG(svg!, context, options, canvas, titleToExport);
     }
-
-    await renderSVG(svg!, context, options, canvas, titleToExport);
-
 }
 
 export function renderSVG(
