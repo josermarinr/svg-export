@@ -8,7 +8,7 @@ Many library utilise html2canvas & canvg to transform and export svg,  this libr
 
 this library it's very easy to implementing, you need install with
 
-`npm i svg-export`
+`npm i svg-in-png`
 
 then you can simple use like
 
