@@ -2,7 +2,7 @@
 
 ## motivation
 
-Many library utilise html2canvas to transform and export svg,  this library work without other dependencies and its more light and more performance
+Many library utilise html2canvas & canvg to transform and export svg,  this library work without other dependencies and its more light and more performance
 
 ## easy to use
 
@@ -13,7 +13,7 @@ this library it's very easy to implementing, you need install with
 then you can simple use like
 
 ``` ts
-ExportSvgToPng({
+svgExport({
   id:"thisChart",
   titleToExport:"example",
   options: {
