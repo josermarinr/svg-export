@@ -32,7 +32,7 @@ export async function svgExport({
             }, 500)
         );
     }else{
-        await renderSVG(svg!, context, options, canvas, titleToExport);
+        renderSVG(svg!, context, options, canvas, titleToExport);
     }
 }
 
