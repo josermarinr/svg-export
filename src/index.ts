@@ -74,7 +74,7 @@ export function renderSVG(
         image.src = url;
 
         canvas.width = width;
-        canvas.height = height + 50;
+        canvas.height = height+50;
 
         cleanBoard(context, width, height);
         let BgColor = options?.background || "white";
@@ -91,5 +91,7 @@ export function renderSVG(
                 createFinalImageAndDownload(DOMURL, url, canvas, titleToExport);
             }
         };
+        return image.src
     }
+    
 }

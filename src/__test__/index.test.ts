@@ -1,7 +1,7 @@
 /**
  * @jest-environment jsdom
 */
-import { svgExport } from "./../index";
+import { renderSVG, svgExport } from "./../index";
 
 
 /**
@@ -125,13 +125,14 @@ describe(svgExport, () => {
         expect(idContain?.nodeName).toContain("DIV");
     });
 
-    it.skip("should return a blobURL", async function() {
-        expect.assertions(1);
-        await expect(svgExport({
-            id: "imagesave",
-            titleToExport: "imageTest",
-        })).resolves.toBe('"blob:http://localhost:4000/ea9b4b19-5ded-44ff-bc4a-227abdaabe38"')
+    it("should return a blobURL", async function() {
+        let canvas = document.createElement("canvas");
+        let context = canvas.getContext("2d");
+        const elementContainer = document.querySelector(`#imagesave`);
+        let svg = elementContainer?.querySelector("svg");
 
+       const expected = renderSVG(svg!, context, undefined, canvas, "example");
 
+       expect(expected).toBe("http://localhost/%22blob:http://localhost:4000/ea9b4b19-5ded-44ff-bc4a-227abdaabe38%22")
     });
 });
