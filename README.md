@@ -1,5 +1,7 @@
 # Export SVG
 
+## [demo](https://josermarinr.github.io/demo-export-svg/)
+## [demo repo](https://github.com/josermarinr/demo-export-svg)
 ## motivation
 
 Many library utilise html2canvas & canvg to transform and export svg,  this library work without other dependencies and its more light and more performance
