@@ -1,17 +1,25 @@
 # Export SVG
 
+## [Spanish README](./moreReadme/LEEME.md)
+
+## [French README](./moreReadme/LISEZ-MOI.md)
+
 ## [demo](https://josermarinr.github.io/demo-export-svg/)
+
 ## [demo repo](https://github.com/josermarinr/demo-export-svg)
-## motivation
 
-Many libraries utilize html2canvas & canvg to transform and export SVG. 
-This library work without other dependencies, and it's more light and more performance.
+## Motivation
 
-## easy to use
+Many libraries utilize html2canvas & canvg to transform and export SVG.
+This library works without other dependencies, and it's more light and more performance.
+
+## Easy to use
 
 this library's very easy to implement, you need to install it with
 
-`npm i svg-in-png`
+``` bash
+npm i svg-in-png
+ ```
 
 then you can simply use like
 
