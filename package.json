@@ -1,6 +1,6 @@
 {
   "name": "svg-in-png",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "export SVG into image, its work with recharts and any other image svg",
   "main": "lib/index.js",
   "types": "lib",
