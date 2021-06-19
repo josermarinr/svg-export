@@ -4,15 +4,16 @@
 ## [demo repo](https://github.com/josermarinr/demo-export-svg)
 ## motivation
 
-Many library utilise html2canvas & canvg to transform and export svg,  this library work without other dependencies and its more light and more performance
+Many libraries utilize html2canvas & canvg to transform and export SVG. 
+This library work without other dependencies, and it's more light and more performance.
 
 ## easy to use
 
-this library it's very easy to implementing, you need install with
+this library's very easy to implement, you need to install it with
 
 `npm i svg-in-png`
 
-then you can simple use like
+then you can simply use like
 
 ``` ts
 svgExport({
@@ -36,10 +37,10 @@ svgExport({
     fontFamily?: {url: string, fontFamily: string};
 ```
 
-background, color of your svg, default white.
+background, the color of background SVG, default white.
 
-size: custom size of you svg.
+size: the custom size of SVG.
 
-extraSize: in many case the xAxis in rechart its not render because its other svg inside for that reason and if you want have more space in top or buttons place you cand add more with this props.
+extraSize: in many cases, the xAxis in rechart does not render because it's another SVG inside for that reason or if you want to have more space on top or buttons place you can add more with these props.
 
-fontFamily: the first problem in export svg its the external font like google font are not render by default for that you need only write the url of you fonts where the font-face its declared.
+fontFamily: the first problem in export SVG it's the external font, like google font, is not rendered by default for that you need only write the URL of your fonts where the font-face it's declared.
